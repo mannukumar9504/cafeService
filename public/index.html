@@ -1,6 +1,23 @@
-<html>
-    <header></header>
-    <body>
-        <h4>mannu</h4>
+<html ng-app="myApp">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.0/angular.min.js.map"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.26/angular-ui-router.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.26/angular-ui-router.js.map"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.26/angular-ui-router.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="routes.js"></script>
+    </head>
+    <body ng-controller="firstCtrl">
+        <a ui-sref='index'>index</a>
+        <h4>{{name}} sdhfsdhfhjghjghgh</h4>
+        <div ui-view></div>
     </body>
+    <script>
+        app.controller('firstCtrl', function($scope){
+            $scope.name = 'mannu';
+
+        });
+    </script>
 </html>
