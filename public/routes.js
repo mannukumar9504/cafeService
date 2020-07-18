@@ -4,10 +4,15 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$urlMa
    $urlMatcherFactoryProvider.strictMode(false);
     // Code to resolve trailing slash in html5 mode ends here
 
-    $stateProvider.state('mannu', {
-        url: '/mannu',
-                template: 'jshfdjhdshgjhsd yaha tak sahi hai'
-
+    $stateProvider.state('/home', {
+        url: '/home',
+                templateUrl: 'modules/home/home.html',
 
     })
+    $stateProvider.state('/news', {
+        url: '/news',
+                templateUrl: 'modules/news/news.html',
+
+    })
+    $urlRouterProvider.otherwise("/home"); 
     }])
